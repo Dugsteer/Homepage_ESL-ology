@@ -1,0 +1,27 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: $color-light-grey;
+  padding: 1.5rem 0;
+  height: 8rem;
+  background-color: $color-blue;
+
+  @media only screen and (max-width: $bp-large) {
+    height: 10rem;
+  }
+
+  &__copyright {
+    text-align: center;
+    line-height: 1.5;
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+#footer a {
+  color: $color-yellow;
+}

@@ -1,0 +1,15 @@
+.ads {
+    background-color: green;
+    grid-column: 2 /-1;
+    height: 10rem;
+
+&-top {
+    margin-top: 2rem;
+}
+&-bottom {
+    margin-bottom: 2rem;
+    grid-row: 5/6;
+}
+
+}
+

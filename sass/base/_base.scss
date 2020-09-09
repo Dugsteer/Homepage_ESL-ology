@@ -1,0 +1,34 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; //1rem = 10px; 10px/16px default = 62.5%;
+
+@media only screen and (max-width:$bp-large) {
+  font-size: 50%;
+}
+
+@media only screen and (max-width:$bp-smallest){
+ font-size: 40%;
+}
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: $color-light-grey;
+}
+
+.content {
+  width: 90vw;
+  margin: auto;
+  display: grid;
+  grid-template-rows: 12rem repeat(3, 1fr) 12rem;
+  grid-template-columns: auto repeat(3, minmax(0, 1fr));
+  grid-gap: 3rem;
+}

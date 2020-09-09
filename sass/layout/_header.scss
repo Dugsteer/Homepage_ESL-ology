@@ -1,0 +1,135 @@
+.header {
+  display: absolute;
+
+  &__slider {
+    background-image: url("../img/newbg.jpg");
+    /* Photo by Element5 Digital on Unsplash */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    width: auto;
+    background-position: center bottom;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0%, 100% 75%, 50% 100%, 0 75%);
+
+    @media only screen and (max-width:$bp-small) {
+      height: 50vh;
+  }
+
+  }
+
+  &__overlay {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(51, 54, 59, 0.8);
+  }
+
+  &__logo {
+    position: absolute;
+    left: 7vw;
+    top: 7vw;
+    height: 6vw;
+    transform: translateY(3vw);
+    width: 6vw;
+    z-index: 5;
+    fill: #fff;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.1) translateY(3vw);
+    }
+
+    &:focus,
+    &:active {
+      transform: scale(0.99) translateY(3.3vw);
+    }
+  }
+
+  &__title {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -55%);
+    color: $color-light-grey;
+    font-size: 10rem;
+    font-family: "Anton", sans-serif;
+    text-transform: uppercase;
+    z-index: 2;
+    text-align: center;
+    cursor: pointer;
+    min-width: 60rem;
+
+    @media screen and (max-width: 900px) {
+      font-size: 7rem;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: origin(-50%);
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+    background-color: $color-blue;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    color: $color-slate;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    z-index: 10;
+
+    &:hover {
+      background-color: $color-blue;
+      color: $color-yellow;
+    }
+
+    &:active,
+    &:focus {
+      transform: translateY(2px) translateX(-50%);
+      outline-style: none;
+      color: $color-yellow;
+    }
+
+    span {
+      transform: translateY(-2px);
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .icon-tool {
+    fill: currentColor;
+    height: 5rem;
+    width: 5rem;
+    padding-right: 8px;
+  }
+
+  &__background {
+    position: absolute;
+    background-color: $color-blue;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    @media only screen and (max-width:$bp-small) {
+      height: 50vh;
+    
+  }
+  }
+}
