@@ -2,7 +2,13 @@
     grid-column: 2/7;
     img {
         width: 100%;
+        box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.6);
+        border-radius: 2px;
     }
+}
+
+.titleText {
+    margin-left: 3rem;
 }
 
 .googleDrive {
@@ -60,6 +66,7 @@ grid-row-gap: 1rem;
     position: relative;
     overflow: none;
     z-index: -1;
+    text-align: start;
 
     p{
         font-family: Montserrat, sans-serif;
@@ -87,7 +94,7 @@ grid-row-gap: 1rem;
         grid-column: 2/3;
         align-self: center;
         justify-self: center;
-        margin-left: 3rem;
+       
 
         h1 {
             font-family: Montserrat, sans-serif;
@@ -100,4 +107,8 @@ grid-row-gap: 1rem;
             font-weight: normal;
         }
     }
+}
+
+#titleImage {
+    box-shadow: none;
 }

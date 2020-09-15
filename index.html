@@ -151,7 +151,7 @@
               <a href="talk-minute.html">Talking Game</a>
             </li>
             <li>
-              <a href="triple-memory.html">Verbs Matching</a>
+              <a href="triple-memory.html">Triple Verb Match</a>
             </li>
             <li>
               <a href="weather-fun.html">Weather Fun</a>
@@ -168,11 +168,11 @@
     </div>
 
 
-      <div class="ads-top ads"></div>
+      <div class="fun-top fun"></div>
 
       <div class="content-1">
-<div class="content-1__image"><img src="img/london.png" alt="An image of a taling game webpage"></div>
-<div class="content-1__text">
+<div class="content-1__image"><img id = "titleImage" src="img/london.png" alt="An image of a taling game webpage"></div>
+<div class="content-1__text titleText">
   <h1>Welcome to Esl-ology.com</h1>
   <br>
   <h5>Here you will find free tools for English lessons that can be used online and in the classroom. There are flashcards, games and grammar mazes, all designed to help your classes. More material will be added regularly, so please check back to see what's new! With very best wishes from Esl-ology.
@@ -185,7 +185,7 @@
       <div class="content-4">
             <figure class="content-4__img">
           <img
-            src="./img/VehiclesPel.jpg"
+            src="./img/ClothesMemory.jpg"
             alt="A picture of a vehicles pelmanism game"
             class="content__img"
           />
@@ -206,7 +206,7 @@
         <div class="text">
           <p class="content-1__text">
             A classic warmer or end of class activity with letters and numbers
-            so that it's easier for teams to play on the big screen.
+            so that it's easier for teams to play on the big screen. There are three sets of words for each vocabulary set.
           </p>
         </div>
       </div>
@@ -214,23 +214,23 @@
       <div class="content-5">
          <figure class="content-5__img">
           <img
-          src="/img/GrammarMaze.jpg"
+          src="/img/QuestionsMaze.jpg"
           alt="A picture of a powerpoint style transport ABC presentation"
           class="content__img"
         />
         </figure>
         <div class="dropdown">
           <button class="btn-dropdown btn-dropdown-main" onclick="dropDown_5()">
-            Slideshows
+            Grammar Mazes
           </button>
           <ul class="ul-list noshow" id="noshow-5">
-            <li class="item"><a href="transport-alphabet.html">A-Z Transport</a></li>
-            <li class="item"><a href="questions-maze.html">Grammar Maze</a></li>
+            <li class="item"><a href="transport-alphabet.html">A-Z of Transport</a></li>
+            <li class="item"><a href="questions-maze.html">Questions Maze</a></li>
           </ul>
         </div>
         <div class="text">
           <p class="content-1__text">
-            All of the slideshows can be viewed in full-screen mode. You are
+            All of the grammar mazes and slideshows can be viewed in full-screen mode. You are
             welcome to copy them to use as templates to make your own.
           </p>
         </div>
@@ -246,7 +246,7 @@
         </figure>
         <div class="dropdown">
           <button class="btn-dropdown btn-dropdown-main" onclick="dropDown_6()">
-            Bingo Games
+            Bingo
           </button>
           <ul class="ul-list noshow" id="noshow-6">
             <li class="item"><a href="bingo-animals.html">Animals Bingo</a></li>
@@ -292,8 +292,7 @@
       </div>
       <div class="text">
         <p class="content-7__text">
-          A great way to present or revise vocabulary sets with a class, I
-          will be adding more sets to this series very soon.
+          A great way to present or revise vocabulary sets with a class, either with traditional flashcards or modern 'hover cards', these are available both with images and with photos.
         </p>
       </div>
     </div>
@@ -314,7 +313,7 @@
       </div>
       <div class="text">
         <p class="content-1__text">
-         A countdown is a fun way to spice up wordsearches, and make worksheets, quests and quizzes competetive.
+         A countdown is a fun way to spice up wordsearches, and make worksheets, quests and quizzes competetive. Alternatively, it can be used when preparing classes as a 'Pomodoro' timer.
         </p>
       </div>
     </div>
@@ -379,7 +378,29 @@ Tweet</a>
       href="https://unsplash.com">Unsplash </a>etc. Icons made by  <a href="https://www.flaticon.com/authors/freepik" title="Freepik"><br>Freepik</a> and <a href="https://www.flaticon.com/authors/itim2101" title="itim2101">itim2101</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> Thanks,guys!</p>
   </div>
   </footer>
-
-    <script src="javascript.js"></script>
+  <div class="hidden">
+    <script>
+<!--//--><![CDATA[//><!--
+var images = new Array();
+function preload(){
+for(i=0; i<preload.arguments.length; i++){
+  images[i] = new Image();
+  images[i].src = preload.arguments[i];
+}
+}
+preload(
+"img/AnimalFlash.jpg",
+"img/ClothesMemory.jpg",
+"img/Countdown.jpg",
+"img/london.png",
+"img/newbg.jpg",
+"img/QuestionsMaze.jpg",
+"img/TalkShow.jpg",
+"img/vehiclesBing.jpg"
+)
+//--><!]]>
+</script>
+  </div>
+    <script src="script/script.js"></script>
   </body>
 </html>

@@ -1,7 +1,8 @@
-.ads {
+.fun {
     background-color: green;
     grid-column: 2 /-1;
-    height: 10rem;
+    height: 2rem;
+    visibility: hidden;
 
 &-top {
     margin-top: 2rem;
@@ -9,6 +10,7 @@
 &-bottom {
     margin-bottom: 2rem;
     grid-row: 5/6;
+    visibility: hidden;
 }
 
 }

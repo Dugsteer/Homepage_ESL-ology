@@ -2,7 +2,7 @@
     background: #fff;
     display: inline-block;
     border: .1px solid $color-slate;
-    border-radius: .5rem;
+    border-radius: 5px;
     list-style-type: none;
     height: auto;
     z-index: 10;
@@ -47,7 +47,7 @@
     height: 3.6rem;
     text-transform: uppercase;
    background-color: $color-blue;
-   border-radius: .5rem;
+   border-radius:5px;
    color: white;
    display: inline-block;
    cursor: pointer;
@@ -55,7 +55,7 @@
    @media only screen and (max-width:$bp-small) {
     font-size: 1.2rem;
     height: 4.4rem;
-    border-radius: 1rem;
+    border-radius: 5px;
   
 }
 
