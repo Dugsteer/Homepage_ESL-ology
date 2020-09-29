@@ -55,6 +55,8 @@ function openSidebar() {
   const subList4 = document.getElementById('subList4');
   const subList5 = document.getElementById('subList5');
   const subList0 = document.getElementById('subList0');
+  const subList6 = document.getElementById('subList6');
+
 
   function showList0(){
 subList0.style.display = subList0.style.display === 'none' ? 'inline-block' : 'none';
@@ -73,6 +75,9 @@ subList4.style.display = subList4.style.display === 'none' ? 'inline-block' : 'n
   }
   function showList5(){
 subList5.style.display = subList5.style.display === 'none' ? 'inline-block' : 'none';
+  }
+  function showList6(){
+subList6.style.display = subList6.style.display === 'none' ? 'inline-block' : 'none';
   }
 
   // TWITTER 
